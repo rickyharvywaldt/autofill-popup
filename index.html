@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="my-popup" class="popup">
+        <div class="close-btn">&times;</div> 
+        <div class="form">
+            <h2>TFX/USDT</h2>
+            <h3>Price:<span>1.000</span></h3>
+            <hr>
+            <div class="form-element">
+                <label for="amount">Available Amount</label>
+                <label for="buy">Pending Buy</label><br><br>
+                <label>5792.950000 TFX</label>
+                <div id="countdown">10110748</div><br><br><br>
+            </div>
+            <div class="form-element">
+                <label for="sell-amount">Sell Amount</label>
+                <label for="filled">Filled</label><br><br>
+                <input type="text" id="sell-amount" placeholder="0">
+                <div id="countup">0</div><br>
+                <hr><br>
+            </div>
+            <div class="form-element">
+                <button type="button" id="button-text" class="button" onclick="this.classList.toggle('button--loading')"><span class="btn-text">Sell</span></button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
